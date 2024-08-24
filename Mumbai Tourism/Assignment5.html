@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mumbai Tourist Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS for additional styling -->
+  <style>
+    .jumbotron {
+      background-image: url('mumbai-skyline.jpg');
+      background-size: cover;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Mumbai Tourist Guide</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Mumbai</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#attractions">Attractions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Jumbotron with welcome message -->
+<div class="jumbotron jumbotron-fluid text-center" id="home">
+  <div class="container">
+    <h1 class="display-4">Welcome to Mumbai</h1>
+    <p class="lead">Explore the City of Dreams</p>
+  </div>
+</div>
+
+<!-- About Mumbai Section -->
+<section class="container" id="about">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>About Mumbai</h2>
+      <p>Mumbai, formerly known as Bombay, is the capital city of the Indian state of Maharashtra. It is the most populous city in India and the seventh most populous city in the world.</p>
+      <p>Mumbai is known for its diverse culture, historical landmarks, Bollywood film industry, and vibrant nightlife.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="gateway-of-india.jpg" class="img-fluid rounded" alt="Gateway of India">
+    </div>
+  </div>
+</section>
+
+<!-- Attractions Section -->
+<section class="container" id="attractions">
+  <h2 class="text-center mb-4">Popular Attractions</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="marine-drive.jpg" class="card-img-top" alt="Marine Drive">
+        <div class="card-body">
+          <h5 class="card-title">Marine Drive</h5>
+          <p class="card-text">A picturesque promenade overlooking the Arabian Sea.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="gateway-of-india.jpg" class="card-img-top" alt="Gateway of India">
+        <div class="card-body">
+          <h5 class="card-title">Gateway of India</h5>
+          <p class="card-text">An iconic monument built during the British Raj era.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="elephanta-caves.jpg" class="card-img-top" alt="Elephanta Caves">
+        <div class="card-body">
+          <h5 class="card-title">Elephanta Caves</h5>
+          <p class="card-text">Historical caves dedicated to Lord Shiva, located on Elephanta Island.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="container" id="contact">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <address>
+        <strong>Mumbai Tourism Office</strong><br>
+        123, Tourism Road<br>
+        Mumbai, India<br>
+        Phone: +91-1234567890<br>
+        Email: info@mumbaitourism.com
+      </address>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
